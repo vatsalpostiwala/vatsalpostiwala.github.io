@@ -160,8 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Dynamic Typewriter Role Animation
   // --------------------------------------------------------------------------
   const roles = [
-    "Flutter & Firebase Mobile Engineer",
+    "Software Engineer (CSE • AI/ML • Cyber)",
     "Creator of Anti-Phishing AI Guard",
+    "AI/ML & Cybersecurity Explorer",
+    "Flutter & Full-Stack Developer",
     "NCVET & NASSCOM NSQF Level 5 Certified",
     "B.Tech CSE Undergraduate @ SIT Pune"
   ];
