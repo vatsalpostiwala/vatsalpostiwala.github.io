@@ -39,35 +39,92 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       })
       .catch(() => {
-        // Fallback gracefully without throwing UI errors
         liveBadge.textContent = '● Cloud API: Render Microservice';
       });
   }
 
-  // 3. Subtle Card Tilt & Mouse Tracking Effect on Featured Card
-  const featuredCard = document.querySelector('.featured-card');
-  if (featuredCard && window.innerWidth > 992) {
-    featuredCard.addEventListener('mousemove', (e) => {
-      const rect = featuredCard.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      
-      const rotateX = ((y - centerY) / centerY) * -3;
-      const rotateY = ((x - centerX) / centerX) * 3;
-      
-      featuredCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  // 3. Dynamic Typewriter Role Animation
+  const roles = [
+    "Flutter Mobile Engineering",
+    "Pre-Navigation AI Cybersecurity",
+    "B.Tech CSE @ SIT Pune",
+    "NCVET Level 5 Application Developer",
+    "Full-Stack Cloud & Firebase Systems"
+  ];
+  let roleIdx = 0;
+  let charIdx = 0;
+  let deleting = false;
+  const typeEl = document.getElementById("typewriterText");
+
+  function tickTypewriter() {
+    if (!typeEl) return;
+    const current = roles[roleIdx];
+    if (!deleting) {
+      charIdx++;
+      typeEl.textContent = current.slice(0, charIdx);
+      if (charIdx === current.length) {
+        deleting = true;
+        setTimeout(tickTypewriter, 2000);
+        return;
+      }
+      setTimeout(tickTypewriter, 50);
+    } else {
+      charIdx--;
+      typeEl.textContent = current.slice(0, charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        roleIdx = (roleIdx + 1) % roles.length;
+        setTimeout(tickTypewriter, 350);
+        return;
+      }
+      setTimeout(tickTypewriter, 25);
+    }
+  }
+  setTimeout(tickTypewriter, 800);
+
+  // 4. Scroll Progress Indicator
+  const progressEl = document.getElementById("scroll-progress");
+  if (progressEl) {
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressEl.style.width = pct + "%";
+    });
+  }
+
+  // 5. Mobile Navigation Toggle
+  const mobileBtn = document.getElementById('mobileMenuBtn');
+  const navLinks = document.querySelector('.nav-links');
+  if (mobileBtn && navLinks) {
+    mobileBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    // Close nav on link click
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  }
+
+  // 6. Interactive 3D Card Hover Tilt
+  const photoCard = document.querySelector('.photo-card-wrap');
+  if (photoCard && window.innerWidth > 992) {
+    photoCard.addEventListener('mousemove', (e) => {
+      const rect = photoCard.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      const rotateX = (-y / (rect.height / 2)) * 6;
+      const rotateY = (x / (rect.width / 2)) * 6;
+      photoCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     });
 
-    featuredCard.addEventListener('mouseleave', () => {
-      featuredCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
-      featuredCard.style.transition = 'transform 0.5s ease';
+    photoCard.addEventListener('mouseleave', () => {
+      photoCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+      photoCard.style.transition = 'transform 0.4s ease';
     });
 
-    featuredCard.addEventListener('mouseenter', () => {
-      featuredCard.style.transition = 'none';
+    photoCard.addEventListener('mouseenter', () => {
+      photoCard.style.transition = 'none';
     });
   }
 });
