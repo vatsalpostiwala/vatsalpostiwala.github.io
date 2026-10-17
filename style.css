@@ -657,6 +657,8 @@ section, .hero-section {
   border-top: 1px solid var(--border-glow);
   border-bottom: 1px solid var(--border-glow);
   background: var(--bg-secondary);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
 .marquee-track {
@@ -1413,7 +1415,7 @@ section, .hero-section {
 }
 
 /* ==========================================================================
-   Responsive Breakpoints
+   Responsive Breakpoints & Multi-Screen Optimization
    ========================================================================== */
 @media (max-width: 920px) {
   .hero-grid {
@@ -1436,14 +1438,186 @@ section, .hero-section {
   .mobile-menu-btn {
     display: flex;
   }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
 }
 
-@media (max-width: 600px) {
-  .stats-grid, .featured-highlights {
+@media (max-width: 768px) {
+  /* 1. Mobile Header: Solid native app header pinned to top, eliminating peek-through slits */
+  .navbar {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--border-glow);
+    padding: 12px 18px;
+    background: rgba(6, 9, 19, 0.94);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+  }
+
+  [data-theme="light"] .navbar {
+    background: rgba(248, 250, 252, 0.96);
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 54px 0;
+  }
+
+  .hero-section {
+    padding: 95px 0 46px;
+    min-height: auto;
+  }
+
+  /* 2. Flagship Banner & High-Density Highlights */
+  .flagship-banner {
+    padding: 22px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .featured-highlights {
     grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  /* 3. Section Title mobile sizing */
+  .section-title {
+    font-size: clamp(1.6rem, 5.5vw, 2.1rem);
+    line-height: 1.2;
+  }
+
+  /* 4. Marquee Mobile Mask */
+  .marquee-wrapper {
+    margin: 20px 0 32px;
+    mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  }
+}
+
+@media (max-width: 540px) {
+  /* 5. 2x2 Compact Stats Grid on Phones (Replaces the awkward 1-column stack) */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .stat-card {
+    padding: 14px 10px;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.74rem;
+    line-height: 1.35;
+  }
+
+  /* 6. Contact Box & Direct Email Button on Mobile (Zero horizontal overflow) */
+  .contact-box {
+    padding: 26px 14px;
+    border-radius: var(--radius-md);
+  }
+
+  .contact-heading {
+    font-size: 1.55rem;
+  }
+
+  .contact-subtext {
+    font-size: 0.92rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .contact-links .btn {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+  .contact-direct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: var(--radius-md);
+    padding: 12px 10px;
+    gap: 8px;
+    background: var(--bg-card);
+  }
+
+  .contact-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .copy-email-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    font-size: 0.82rem;
+  }
+
+  #emailText {
+    word-break: break-all;
+  }
+
+  .copy-hint {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+  }
+
+  /* 7. Footer Mobile Alignment */
+  .footer-content {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  /* Extra compact screens (iPhone SE, small Androids) */
+  .brand-name {
+    font-size: 0.92rem;
   }
   
-  .contact-box {
-    padding: 24px 16px;
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .stat-number {
+    font-size: 1.25rem;
   }
 }
