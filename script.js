@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const filter = btn.dataset.filter;
-      document.querySelectorAll('.project-card').forEach(card => {
+      document.querySelectorAll('#projects-grid .project-card').forEach(card => {
         card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'flex' : 'none';
       });
     });

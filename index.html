@@ -29,6 +29,16 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://vatsalpostiwala.github.io/" />
 
+  <!-- Favicons for Google Search & Modern Browsers -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -294,9 +304,8 @@
           </div>
           <div class="filter-bar">
             <button class="filter-btn active" data-filter="all">All Systems</button>
-            <button class="filter-btn" data-filter="ai-security">AI &amp; Cybersecurity</button>
-            <button class="filter-btn" data-filter="mobile">Flutter &amp; Mobile</button>
             <button class="filter-btn" data-filter="web">Full-Stack Web</button>
+            <button class="filter-btn" data-filter="systems">Core CS &amp; DBMS</button>
           </div>
         </div>
 
@@ -347,61 +356,7 @@
 
         <!-- Projects Grid -->
         <div class="projects-grid" id="projects-grid">
-          <!-- Project 2 -->
-          <article class="project-card reveal" data-category="ai-security">
-            <div>
-              <div class="project-top">
-                <div class="project-folder">🤖</div>
-                <span class="project-badge">Multi-Agent AI</span>
-              </div>
-              <h3 class="project-title">
-                <a href="https://github.com/PranilShah-08/multiagent" target="_blank" rel="noopener">Autonomous Multi-Agent Orchestration</a>
-              </h3>
-              <p class="project-desc">
-                Collaborative framework coordinating specialized LLM worker agents for autonomous task planning, structured reasoning, and deterministic tool handoffs.
-              </p>
-            </div>
-            <div>
-              <div class="project-tags">
-                <span class="tag">Multi-Agent AI</span>
-                <span class="tag">Python</span>
-                <span class="tag">LLM Routing</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/PranilShah-08/multiagent" target="_blank" rel="noopener">View Repository ↗</a>
-                <span style="color:var(--text-muted);">Collaborator</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="project-card reveal" data-category="mobile">
-            <div>
-              <div class="project-top">
-                <div class="project-folder">📱</div>
-                <span class="project-badge">Flutter &amp; Firebase</span>
-              </div>
-              <h3 class="project-title">
-                <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener">Cross-Platform Flutter &amp; Firebase Suite</a>
-              </h3>
-              <p class="project-desc">
-                Production-grade mobile apps engineered with Flutter, Dart, Firebase Authentication, Cloud Firestore real-time synchronization, and Material 3 design.
-              </p>
-            </div>
-            <div>
-              <div class="project-tags">
-                <span class="tag">Flutter</span>
-                <span class="tag">Dart</span>
-                <span class="tag">Firebase</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener">Explore Apps ↗</a>
-                <span style="color:var(--text-muted);">Mobile App</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4 -->
+          <!-- NutriGuide -->
           <article class="project-card reveal" data-category="web">
             <div>
               <div class="project-top">
@@ -428,34 +383,7 @@
             </div>
           </article>
 
-          <!-- Project 5 -->
-          <article class="project-card reveal" data-category="ai-security">
-            <div>
-              <div class="project-top">
-                <div class="project-folder">🔬</div>
-                <span class="project-badge">AI Security Research</span>
-              </div>
-              <h3 class="project-title">
-                <a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener">The Architecture of Subversion: Prompt Injection</a>
-              </h3>
-              <p class="project-desc">
-                Comprehensive technical research examining direct, indirect, and multimodal prompt injection vectors in Large Language Models and defense-in-depth mitigations.
-              </p>
-            </div>
-            <div>
-              <div class="project-tags">
-                <span class="tag">LLM Security</span>
-                <span class="tag">Adversarial ML</span>
-                <span class="tag">ORCID Research</span>
-              </div>
-              <div class="project-links">
-                <a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener">ORCID Record ↗</a>
-                <span style="color:var(--text-muted);">SIT Pune</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 6 -->
+          <!-- Maa Modheshwari Travels -->
           <article class="project-card reveal" data-category="web">
             <div>
               <div class="project-top">
@@ -482,8 +410,8 @@
             </div>
           </article>
 
-          <!-- Project 7 -->
-          <article class="project-card reveal" data-category="ai-security">
+          <!-- Core Java & Relational DBMS -->
+          <article class="project-card reveal" data-category="systems">
             <div>
               <div class="project-top">
                 <div class="project-folder">☕</div>
@@ -624,7 +552,7 @@
                 </div>
                 <ul class="timeline-list">
                   <li>Engineered pre-navigation browser threat blocker combining Chrome MV3 telemetry with FastAPI + XGBoost on Render.</li>
-                  <li>Collaborated across multi-developer repositories including <code>PranilShah-08/multiagent</code> and <code>Tejas2305/NutriGuide</code>.</li>
+                  <li>Collaborated across open-source and team repositories including <code>Tejas2305/NutriGuide</code> and client web deployments.</li>
                 </ul>
               </div>
             </div>
@@ -707,7 +635,7 @@
               </div>
               <div class="competency-item">
                 <div class="competency-head"><span>Multi-Agent AI Systems</span><span class="competency-tier">Collaborative</span></div>
-                <div class="competency-proof">Autonomous worker decomposition and tool routing in <code>PranilShah-08/multiagent</code>.</div>
+                <div class="competency-proof">LLM worker orchestration, structured agent reasoning, prompt engineering, and deterministic routing workflows.</div>
               </div>
             </div>
           </div>
