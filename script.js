@@ -160,12 +160,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Dynamic Typewriter Role Animation
   // --------------------------------------------------------------------------
   const roles = [
-    "Software Engineer (CSE • AI/ML • Cyber)",
+    "Computer Science & Engineering Student",
+    "Open to Engineering Internships",
+    "AI/ML & Cybersecurity Developer",
     "Creator of Anti-Phishing AI Guard",
-    "AI/ML & Cybersecurity Explorer",
-    "Flutter & Full-Stack Developer",
-    "NCVET & NASSCOM NSQF Level 5 Certified",
-    "B.Tech CSE Undergraduate @ SIT Pune"
+    "Software & Systems Developer"
   ];
   let roleIdx = 0;
   let charIdx = 0;
