@@ -7,10 +7,16 @@
   <!-- Primary Meta Tags -->
   <title>Vatsal Postiwala | Software Engineer &amp; Flutter Developer</title>
   <meta name="title" content="Vatsal Postiwala | Software Engineer &amp; Flutter Developer" />
-  <meta name="description" content="Official portfolio of Vatsal Dipakbhai Postiwala — B.Tech CSE at SIT Pune, NCVET NSQF Level 5 Certified Application Developer (540 Hrs), Ex-Flutter Intern at Leaf Drive IT Solution, and Creator of Anti-Phishing AI Guard." />
-  <meta name="keywords" content="Vatsal Postiwala, Vatsal Dipakbhai Postiwala, Flutter Developer, FastAPI, XGBoost, Cybersecurity, Anti-Phishing AI Guard, SIT Pune, Symbiosis Institute of Technology, NCVET NASSCOM NSQF Level 5, Skill India Digital, ORCID 0009-0007-7965-0995" />
+  <meta name="description" content="Official engineering portfolio of Vatsal Postiwala (Vatsal Dipakbhai Postiwala). Software Engineer and Flutter Developer at Symbiosis Institute of Technology (SIT), Pune. Creator of Anti-Phishing AI Guard on Chrome Web Store." />
+  <meta name="keywords" content="Vatsal Postiwala, Vatsal Postiwala github, Vatsal Dipakbhai Postiwala, vatsalpostiwala, Flutter Developer, Anti-Phishing AI Guard, SIT Pune, Symbiosis Institute of Technology, NCVET NASSCOM NSQF Level 5, Skill India Digital, Leaf Drive IT Solution, ORCID 0009-0007-7965-0995" />
   <meta name="author" content="Vatsal Dipakbhai Postiwala" />
-  <meta name="robots" content="index, follow" />
+  
+  <!-- Search Engine Crawlers & Directives -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="rating" content="general" />
+  <meta name="revisit-after" content="2 days" />
 
   <!-- Open Graph / Recruiter Link Preview -->
   <meta property="og:type" content="website" />
@@ -46,58 +52,109 @@
 
   <link rel="stylesheet" href="style.css?v=3.0" />
 
-  <!-- Structured Data (JSON-LD) for Google Knowledge Graph & SEO -->
+  <!-- Structured Data (JSON-LD) for Google Knowledge Graph & People Search -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Vatsal Postiwala",
-    "alternateName": ["Vatsal Dipakbhai Postiwala", "vatsalpostiwala"],
-    "url": "https://vatsalpostiwala.github.io",
-    "image": "https://vatsalpostiwala.github.io/assets/profile.jpg",
-    "jobTitle": "Software Engineer & Flutter Developer",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Symbiosis Institute of Technology",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "addressCountry": "India"
-      },
-      "parentOrganization": {
-        "@type": "EducationalOrganization",
-        "name": "Symbiosis International (Deemed University)"
-      }
-    },
-    "hasCredential": [
+    "@graph": [
       {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Application Developer Web Mobile",
-        "credentialCategory": "NSQF Level 5 (540 Hrs)",
-        "recognizedBy": {
-          "@type": "Organization",
-          "name": "NCVET & IT-ITeS SSC NASSCOM"
+        "@type": "WebSite",
+        "@id": "https://vatsalpostiwala.github.io/#website",
+        "url": "https://vatsalpostiwala.github.io/",
+        "name": "Vatsal Postiwala Portfolio",
+        "description": "Official software engineering portfolio of Vatsal Postiwala (Vatsal Dipakbhai Postiwala).",
+        "publisher": {
+          "@id": "https://vatsalpostiwala.github.io/#person"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://vatsalpostiwala.github.io/#profilepage",
+        "url": "https://vatsalpostiwala.github.io/",
+        "name": "Vatsal Postiwala | Software Engineer & Flutter Developer",
+        "isPartOf": {
+          "@id": "https://vatsalpostiwala.github.io/#website"
+        },
+        "about": {
+          "@id": "https://vatsalpostiwala.github.io/#person"
+        },
+        "mainEntity": {
+          "@id": "https://vatsalpostiwala.github.io/#person"
         }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://vatsalpostiwala.github.io/#person",
+        "name": "Vatsal Postiwala",
+        "givenName": "Vatsal",
+        "familyName": "Postiwala",
+        "additionalName": "Dipakbhai",
+        "alternateName": [
+          "Vatsal Dipakbhai Postiwala",
+          "vatsalpostiwala",
+          "Vatsal Postiwala GitHub",
+          "Vatsal Postiwala SIT Pune"
+        ],
+        "url": "https://vatsalpostiwala.github.io",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://vatsalpostiwala.github.io/assets/profile.jpg",
+          "caption": "Vatsal Postiwala — Software Engineer & Flutter Developer"
+        },
+        "jobTitle": "Software Engineer & Flutter Developer",
+        "description": "B.Tech CSE undergraduate at Symbiosis Institute of Technology (SIT), Pune. Creator of Anti-Phishing AI Guard, Ex-Flutter Intern at Leaf Drive IT Solution, and NCVET NSQF Level 5 Certified Application Developer.",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Symbiosis Institute of Technology",
+          "url": "https://www.sitpune.edu.in",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "addressCountry": "India"
+          },
+          "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "Symbiosis International (Deemed University)"
+          }
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Tapi Diploma Engineering College, Surat"
+        },
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Application Developer - Web & Mobile",
+            "credentialCategory": "NSQF Level 5 (540 Hrs, 18 Credits)",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "NCVET & IT-ITeS SSC NASSCOM"
+            },
+            "url": "https://admin.skillindiadigital.gov.in/documentverificationbyQR?content=P0NhbmRpZGF0ZSBOYW1lID0gUG9zdGl3YWxhIHZhdHNhbCBkaXBha2JoYWkmJkNhbmRpZGF0ZSBJRCA9IENBTl8zMDU5MDAwOSYmU2VjdG9yIE5hbWUgPSBJVC1JVGVTJiZRUCBOYW1lID0gQXBwbGljYXRpb24gRGV2ZWxvcGVyIC0gV2ViICYgTW9iaWxlJiZRUCBDb2RlID0gU1NDL1E4NDAzJiZHcmFkZSA9IEImJkNhbmRpZGF0ZS9BcHBsaWNhbnQgdHlwZSA9IENhbmRpZGF0ZSYmRG9jdW1lbnQgSUQgPSBSSFQySVZGWEtLMFhHWjJJJiZEb2N1bWVudCA9IGNlcnRpZmljYXRlJiZJc3N1YW5jZSBEYXRlID0gMTUvMDEvMjAyNQ%3D%3D"
+          }
+        ],
+        "sameAs": [
+          "https://github.com/vatsalpostiwala",
+          "https://www.linkedin.com/in/vatsal-postiwala",
+          "https://orcid.org/0009-0007-7965-0995",
+          "https://chromewebstore.google.com/detail/anti-phishing-ai-guard/hacojgdkakkkjlbiakmdnigchjlaikkh"
+        ],
+        "knowsAbout": [
+          "Flutter Development",
+          "Dart Programming",
+          "Firebase Authentication & Firestore",
+          "Machine Learning & XGBoost",
+          "Cybersecurity & Pre-Navigation Phishing Detection",
+          "FastAPI Backend Development",
+          "Chrome Extensions (Manifest V3)",
+          "Java & Object-Oriented Programming",
+          "Data Structures & Algorithms",
+          "Relational DBMS & SQL",
+          "Full-Stack Web Development & MongoDB Atlas"
+        ]
       }
-    ],
-    "sameAs": [
-      "https://github.com/vatsalpostiwala",
-      "https://www.linkedin.com/in/vatsal-postiwala",
-      "https://orcid.org/0009-0007-7965-0995",
-      "https://chromewebstore.google.com/detail/anti-phishing-ai-guard/hacojgdkakkkjlbiakmdnigchjlaikkh"
-    ],
-    "knowsAbout": [
-      "Flutter",
-      "Dart",
-      "Firebase",
-      "Machine Learning",
-      "Cybersecurity",
-      "Phishing Detection",
-      "FastAPI",
-      "Python",
-      "Java",
-      "Data Structures and Algorithms"
     ]
   }
   </script>

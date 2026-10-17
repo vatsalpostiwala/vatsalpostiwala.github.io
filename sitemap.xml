@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://vatsalpostiwala.github.io/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://vatsalpostiwala.github.io/assets/profile.jpg</image:loc>
+      <image:title>Vatsal Postiwala — Software Engineer &amp; Flutter Developer</image:title>
+      <image:caption>Official portrait of Vatsal Dipakbhai Postiwala, B.Tech CSE at SIT Pune and Creator of Anti-Phishing AI Guard</image:caption>
+    </image:image>
+  </url>
+</urlset>
