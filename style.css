@@ -245,17 +245,22 @@ section, .hero-section {
 .brand-badge {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #18202d, #080a0f);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #090d16;
   border: 1.5px solid rgba(34, 211, 238, 0.45);
   display: grid;
   place-items: center;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 0.92rem;
-  letter-spacing: -0.02em;
   box-shadow: 0 0 14px rgba(34, 211, 238, 0.25);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  flex-shrink: 0;
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .nav-brand:hover .brand-badge {
