@@ -2,6 +2,7 @@
 # Allow all search engines and AI web crawlers to index the full portfolio
 
 User-agent: *
+Disallow: /assets/linkedin_thumbnail.png
 Allow: /
 
 # Search engine sitemap location
