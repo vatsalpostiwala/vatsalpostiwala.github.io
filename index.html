@@ -17,6 +17,7 @@
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="rating" content="general" />
   <meta name="revisit-after" content="2 days" />
+  <meta name="google-site-verification" content="google4d880d1636c19c37" />
 
   <!-- Open Graph / Recruiter Link Preview -->
   <meta property="og:type" content="website" />
@@ -52,7 +53,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css?v=4.0" />
+  <link rel="stylesheet" href="style.css?v=5.0" />
 
   <!-- Structured Data (JSON-LD) for Google Knowledge Graph & People Search -->
   <script type="application/ld+json">
@@ -165,32 +166,33 @@
   <!-- Scroll Progress Bar -->
   <div id="scroll-progress"></div>
 
-  <!-- Sticky Glassmorphic Navbar -->
+  <!-- Header / Navigation -->
   <header class="navbar" id="navbar">
     <div class="container nav-content">
       <a href="#about" class="nav-brand" id="brandLink">
-        <div class="brand-badge"><img src="favicon-48x48.png?v=4.0" alt="VP Logo" class="brand-logo-img" width="38" height="38" /></div>
+        <div class="brand-badge">
+          <img src="favicon-48x48.png?v=4.0" alt="VP Monogram" class="brand-logo-img" width="30" height="30" />
+        </div>
         <span class="brand-name">Vatsal Postiwala</span>
       </a>
 
       <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
         <a href="#about" class="nav-item active">About</a>
         <a href="#projects" class="nav-item">Projects</a>
-        <a href="#credentials" class="nav-item">Certifications</a>
         <a href="#experience" class="nav-item">Experience</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#credentials" class="nav-item">Certifications</a>
         <a href="#skills" class="nav-item">Skills</a>
-        <a href="#research" class="nav-item">Research</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <!-- Dark / Light Mode Toggle Button -->
-        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Dark / Light Theme" aria-label="Toggle Theme">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
           <span id="theme-icon">☀️</span>
         </button>
 
-        <a href="#contact" class="btn btn-sm btn-primary nav-connect-btn">Connect</a>
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Get in Touch</a>
 
-        <!-- Mobile Hamburger Toggle -->
         <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
@@ -200,94 +202,73 @@
     </div>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
+  <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Mobile Navigation">
-    <a href="#about" class="drawer-link">About Overview</a>
-    <a href="#projects" class="drawer-link">Featured Projects</a>
-    <a href="#credentials" class="drawer-link">NCVET &amp; Certifications</a>
-    <a href="#experience" class="drawer-link">Experience &amp; Education</a>
-    <a href="#skills" class="drawer-link">Skills &amp; Architecture</a>
-    <a href="#research" class="drawer-link">Research &amp; ORCID</a>
-    <a href="#contact" class="drawer-link">Get In Touch</a>
+    <a href="#about" class="drawer-link">About</a>
+    <a href="#projects" class="drawer-link">Projects</a>
+    <a href="#experience" class="drawer-link">Experience</a>
+    <a href="#education" class="drawer-link">Education</a>
+    <a href="#credentials" class="drawer-link">Certifications</a>
+    <a href="#skills" class="drawer-link">Technical Skills</a>
+    <a href="#contact" class="drawer-link">Contact</a>
   </div>
 
   <main id="top">
-    <!-- HERO / ABOUT SECTION -->
+    <!-- HERO SECTION -->
     <section class="hero-section" id="about">
-      <div class="container hero-container">
+      <div class="container">
         <div class="hero-grid">
-          <!-- Left Text Content -->
-          <div class="hero-text-block reveal visible">
-            <div class="status-pill">
+          <!-- Left Column -->
+          <div class="hero-content reveal">
+            <div class="status-badge">
               <span class="status-dot"></span>
-              <span>Open to Internships</span>
+              <span>Available for Summer / Fall 2026 Internships</span>
             </div>
 
-            <h1 class="hero-title">
-              Hi, I'm <span class="gradient-text">Vatsal Postiwala</span>
-            </h1>
+            <h1 class="hero-title">Vatsal Postiwala</h1>
+            <p class="hero-role">Computer Science Engineer • AI/ML &amp; Cybersecurity</p>
 
-            <div class="typewriter-row">
-              <span id="typewriter-text">Computer Science &amp; Engineering Student</span>
-              <span class="cursor-caret"></span>
-            </div>
-
-            <p class="hero-bio">
-              Computer Science &amp; Engineering undergraduate at <strong>Symbiosis Institute of Technology (SIT), Pune</strong> and Diploma in IT graduate from <strong>Tapi Diploma Engineering College, Surat</strong>. Experienced in building cross-platform <strong>Flutter &amp; Firebase</strong> mobile apps, full-stack <strong>MERN</strong> web platforms, multi-agent AI workflows, and anti-phishing security backends.
+            <p class="hero-description">
+              Undergraduate at <strong>Symbiosis Institute of Technology (SIT), Pune</strong> and Diploma in IT graduate from <strong>Tapi Diploma Engineering College, Surat</strong>. Creator of <strong>Anti-Phishing AI Guard</strong> (Chrome Web Store). Building production-grade browser defenses, machine learning microservices, and cross-platform mobile systems.
             </p>
 
-            <!-- Verified Profile Badges -->
-            <div class="credentials-bar">
-              <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener" class="credential-pill github-pill">
-                <svg class="pill-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                <span>@vatsalpostiwala</span>
+            <!-- Social / Academic Proof Links -->
+            <div class="hero-social-links">
+              <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener" class="social-pill" title="GitHub Profile">
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                <span>github.com/vatsalpostiwala</span>
               </a>
 
-              <a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener" class="credential-pill orcid-pill">
-                <svg class="pill-icon orcid-icon" viewBox="0 0 256 256"><path fill="#A6CE39" d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0zm-35.3 189.5H68.8V79.2h23.9v110.3zm-11.9-125c-7.7 0-14-6.3-14-14s6.3-14 14-14 14 6.3 14 14-6.3 14-14 14zm110.4 125h-23.7V79.2h23.7v16.3c8.1-12.7 20.3-18.4 35.8-18.4 29.4 0 49.3 22 49.3 56.6 0 35.3-20.9 57.8-50.5 57.8-14.9 0-26.9-5.5-34.6-17.7v15.7zm13.1-66.7c0-21.7-11.6-35.6-28.8-35.6-17.4 0-28.8 14.1-28.8 35.6 0 21.3 11.4 35.4 28.8 35.4 17.2 0 28.8-14.1 28.8-35.4z"/></svg>
+              <a href="https://www.linkedin.com/in/vatsal-postiwala" target="_blank" rel="noopener" class="social-pill" title="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <span>linkedin.com/in/vatsal-postiwala</span>
+              </a>
+
+              <a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener" class="social-pill" title="ORCID Researcher Record">
+                <svg viewBox="0 0 256 256" width="16" height="16"><path fill="#A6CE39" d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0zm-35.3 189.5H68.8V79.2h23.9v110.3zm-11.9-125c-7.7 0-14-6.3-14-14s6.3-14 14-14 14 6.3 14 14-6.3 14-14 14zm110.4 125h-23.7V79.2h23.7v16.3c8.1-12.7 20.3-18.4 35.8-18.4 29.4 0 49.3 22 49.3 56.6 0 35.3-20.9 57.8-50.5 57.8-14.9 0-26.9-5.5-34.6-17.7v15.7zm13.1-66.7c0-21.7-11.6-35.6-28.8-35.6-17.4 0-28.8 14.1-28.8 35.6 0 21.3 11.4 35.4 28.8 35.4 17.2 0 28.8-14.1 28.8-35.4z"/></svg>
                 <span>ORCID: 0009-0007-7965-0995</span>
-              </a>
-
-              <a href="https://www.linkedin.com/in/vatsal-postiwala" target="_blank" rel="noopener" class="credential-pill linkedin-pill">
-                <svg class="pill-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                <span>LinkedIn</span>
               </a>
             </div>
 
-            <!-- Call to Actions -->
-            <div class="hero-cta">
-              <a href="#projects" class="btn btn-primary">Explore Projects ↓</a>
-              <a href="https://chromewebstore.google.com/detail/anti-phishing-ai-guard/hacojgdkakkkjlbiakmdnigchjlaikkh" target="_blank" rel="noopener" class="btn btn-outline">Anti-Phishing AI Guard ↗</a>
-              <a href="#contact" class="btn btn-secondary">Contact Vatsal</a>
+            <!-- CTAs -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+              <a href="https://chromewebstore.google.com/detail/anti-phishing-ai-guard/hacojgdkakkkjlbiakmdnigchjlaikkh" target="_blank" rel="noopener" class="btn btn-secondary">
+                Chrome Extension ↗
+              </a>
+              <a href="#contact" class="btn btn-ghost">Contact Me</a>
             </div>
           </div>
 
-          <!-- Right Executive Profile Card with Real Photo -->
-          <div class="hero-photo-block reveal visible">
-            <div class="profile-card">
-              <div class="avatar-ring">
-                <img src="assets/profile.jpg" alt="Vatsal Dipakbhai Postiwala" class="profile-avatar-img" />
+          <!-- Right Column: Clean Portrait Frame -->
+          <div class="hero-portrait-col reveal">
+            <div class="portrait-card">
+              <div class="portrait-img-wrapper">
+                <img src="assets/profile.jpg" alt="Vatsal Postiwala" class="portrait-img" width="320" height="320" />
               </div>
-              <h2 class="profile-name">Vatsal Dipakbhai Postiwala</h2>
-              <p class="profile-subtitle">Computer Science Engineer • AI/ML &amp; Cybersecurity</p>
-
-              <div class="profile-meta-list">
-                <div class="meta-item">
-                  <span class="meta-icon">🎓</span>
-                  <div><strong>B.Tech in Computer Science &amp; Eng.</strong><br/>Symbiosis Institute of Technology, Pune</div>
-                </div>
-                <div class="meta-item">
-                  <span class="meta-icon">💼</span>
-                  <div><strong>Intern – Flutter Developer</strong><br/>Leaf Drive IT Solution, Surat (2025)</div>
-                </div>
-                <div class="meta-item">
-                  <span class="meta-icon">🏅</span>
-                  <div><strong>NCVET NSQF Level 5 (540 Hrs)</strong><br/>Application Developer Web Mobile (Grade B)</div>
-                </div>
-                <div class="meta-item">
-                  <span class="meta-icon">🛡️</span>
-                  <div><strong>Creator of Anti-Phishing AI Guard</strong><br/>Live on Chrome Web Store &amp; Render Cloud</div>
-                </div>
+              <div class="portrait-caption">
+                <div class="caption-name">Vatsal Postiwala</div>
+                <div class="caption-sub">B.Tech CSE @ SIT Pune • NCVET NSQF Level 5</div>
               </div>
             </div>
           </div>
@@ -295,386 +276,349 @@
       </div>
     </section>
 
-    <!-- QUANTIFIED IMPACT STATS -->
-    <div class="container">
-      <div class="stats-grid reveal">
-        <div class="stat-card">
-          <div class="stat-number">540 Hrs</div>
-          <div class="stat-label">NCVET NSQF Level 5 Certified Training (18 Credits)</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">45 Days</div>
-          <div class="stat-label">Production Flutter &amp; Firebase Industry Internship</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">Live</div>
-          <div class="stat-label">Chrome Web Store Extension + Render Cloud API</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">ORCID</div>
-          <div class="stat-label">Verified Scholarly Research Identifier</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TECH MARQUEE -->
-    <div class="marquee-wrapper reveal" aria-label="Core Technologies Marquee">
-      <div class="marquee-track">
-        <span class="tech-pill"><span class="tech-dot"></span>Flutter &amp; Dart</span>
-        <span class="tech-pill"><span class="tech-dot"></span>FastAPI &amp; XGBoost ML</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Firebase Auth &amp; Firestore</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Chrome Extension MV3</span>
-        <span class="tech-pill"><span class="tech-dot"></span>MERN Stack &amp; MongoDB Atlas</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Multi-Agent AI Systems</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Core Java &amp; DSA</span>
-        <span class="tech-pill"><span class="tech-dot"></span>SQL &amp; Relational DBMS</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Render Cloud &amp; Git</span>
-        <!-- Duplicate for Infinite Loop -->
-        <span class="tech-pill"><span class="tech-dot"></span>Flutter &amp; Dart</span>
-        <span class="tech-pill"><span class="tech-dot"></span>FastAPI &amp; XGBoost ML</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Firebase Auth &amp; Firestore</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Chrome Extension MV3</span>
-        <span class="tech-pill"><span class="tech-dot"></span>MERN Stack &amp; MongoDB Atlas</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Multi-Agent AI Systems</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Core Java &amp; DSA</span>
-        <span class="tech-pill"><span class="tech-dot"></span>SQL &amp; Relational DBMS</span>
-        <span class="tech-pill"><span class="tech-dot"></span>Render Cloud &amp; Git</span>
-      </div>
-    </div>
-
-    <!-- FEATURED & OPEN-SOURCE PROJECTS -->
+    <!-- SELECTED PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-eyebrow">Production Systems &amp; Open Source</span>
-            <h2 class="section-title">Flagship Systems &amp; Repositories</h2>
-          </div>
-          <div class="filter-bar">
-            <span class="badge badge-accent">⚡ Active Production Repositories</span>
-          </div>
+        <div class="section-heading">
+          <span class="section-eyebrow">Engineering Work</span>
+          <h2 class="section-title">Selected Projects</h2>
         </div>
 
-        <!-- Flagship Card: Anti-Phishing AI Guard -->
-        <div class="flagship-banner reveal">
-          <div>
-            <div class="featured-badges">
-              <span class="badge badge-accent">🚀 Live on Chrome Web Store</span>
-              <span class="badge badge-live">Cloud API: 200 OK</span>
-              <span class="badge badge-tech">FastAPI</span>
-              <span class="badge badge-tech">XGBoost</span>
-              <span class="badge badge-tech">Manifest V3</span>
+        <!-- Featured Project: Anti-Phishing AI Guard -->
+        <article class="featured-project-card reveal">
+          <div class="featured-project-header">
+            <div class="project-tags">
+              <span class="tag-accent">Chrome Extension (MV3)</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">XGBoost ML</span>
+              <span class="tag">Render Cloud</span>
             </div>
-
-            <h3 class="flagship-title">Anti-Phishing AI Guard — Intelligent Pre-Navigation Threat Blocker</h3>
-            <p class="flagship-desc">
-              High-speed browser defense extension stopping zero-day phishing attacks before page execution. Extracts lexical, domain entropy, and TLS signatures, submitting URLs to an asynchronous FastAPI backend running a trained XGBoost machine learning classifier on Render.
-            </p>
-
-            <div class="featured-highlights">
-              <div class="highlight-item">
-                <span class="highlight-num">&lt; 50ms</span>
-                <span class="highlight-label">Inference Latency</span>
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-num">100%</span>
-                <span class="highlight-label">Pre-Navigation Block</span>
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-num">MIT</span>
-                <span class="highlight-label">Open Source License</span>
-              </div>
-            </div>
-
-            <div class="flagship-actions">
-              <a href="https://chromewebstore.google.com/detail/anti-phishing-ai-guard/hacojgdkakkkjlbiakmdnigchjlaikkh" target="_blank" rel="noopener" class="btn btn-primary">
-                Get on Chrome Web Store ↗
-              </a>
-              <a href="https://github.com/vatsalpostiwala/anti-phishing-backend" target="_blank" rel="noopener" class="btn btn-outline">
-                Backend Source Code ↗
-              </a>
-              <a href="https://anti-phishing-api.onrender.com/health" target="_blank" rel="noopener" class="btn btn-secondary">
-                Live Health API ↗
-              </a>
+            <div class="project-status">
+              <span class="status-live-dot"></span>
+              <span>Production Live</span>
             </div>
           </div>
-        </div>
 
-        <!-- Projects Grid -->
-        <div class="projects-grid" id="projects-grid">
+          <h3 class="featured-project-title">
+            <a href="https://chromewebstore.google.com/detail/anti-phishing-ai-guard/hacojgdkakkkjlbiakmdnigchjlaikkh" target="_blank" rel="noopener">
+              Anti-Phishing AI Guard — Intelligent Pre-Navigation Threat Blocker
+            </a>
+          </h3>
+
+          <p class="featured-project-desc">
+            Engineered a high-speed browser defense extension stopping zero-day phishing attacks before page execution. Extracts lexical, domain entropy, and TLS signatures on client navigation, submitting URLs to an asynchronous FastAPI backend running a trained XGBoost machine learning classifier on Render with under 50ms average inference latency.
+          </p>
+
+          <div class="spec-grid">
+            <div class="spec-box">
+              <span class="spec-value">&lt; 50ms</span>
+              <span class="spec-label">Inference Latency</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-value">100%</span>
+              <span class="spec-label">Pre-Navigation Interception</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-value">MIT</span>
+              <span class="spec-label">Open Source License</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://chromewebstore.google.com/detail/anti-phishing-ai-guard/hacojgdkakkkjlbiakmdnigchjlaikkh" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+              Chrome Web Store ↗
+            </a>
+            <a href="https://github.com/vatsalpostiwala/anti-phishing-backend" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">
+              Backend Source Code ↗
+            </a>
+            <a href="https://anti-phishing-api.onrender.com/health" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
+              API Health Endpoint ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Secondary Projects Grid -->
+        <div class="projects-grid">
           <!-- NutriGuide -->
-          <article class="project-card reveal" data-category="web">
-            <div>
-              <div class="project-top">
-                <span class="project-badge">HealthTech System</span>
-                <span class="project-tech-meta">Python • MongoDB</span>
-              </div>
-              <h3 class="project-title">
-                <a href="https://github.com/Tejas2305/NutriGuide" target="_blank" rel="noopener">NutriGuide — Smart Nutrition Companion</a>
-              </h3>
-              <p class="project-desc">
-                Collaborative dietary analytics and health tracking application providing personalized macronutrient recommendations backed by MongoDB Atlas cloud storage.
-              </p>
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="category-pill">HealthTech Platform</span>
+              <span class="project-meta-label">Collaborative</span>
             </div>
-            <div>
-              <div class="project-tags">
-                <span class="tag">Full-Stack</span>
-                <span class="tag">MongoDB Atlas</span>
-                <span class="tag">HealthTech</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/Tejas2305/NutriGuide" target="_blank" rel="noopener">View Repository ↗</a>
-                <span style="color:var(--text-muted);">Collaborator</span>
-              </div>
+            <h3 class="project-card-title">
+              <a href="https://github.com/Tejas2305/NutriGuide" target="_blank" rel="noopener">
+                NutriGuide — Smart Nutrition Companion
+              </a>
+            </h3>
+            <p class="project-card-desc">
+              Collaborative dietary analytics and health tracking application providing personalized macronutrient recommendations backed by MongoDB Atlas cloud storage.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">MongoDB Atlas</span>
+              <span class="tag">HealthTech</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/Tejas2305/NutriGuide" target="_blank" rel="noopener" class="card-link">
+                View Repository ↗
+              </a>
             </div>
           </article>
 
           <!-- Maa Modheshwari Travels -->
-          <article class="project-card reveal" data-category="web">
-            <div>
-              <div class="project-top">
-                <span class="project-badge">Production Web</span>
-                <span class="project-tech-meta">Commercial Platform</span>
-              </div>
-              <h3 class="project-title">
-                <a href="https://github.com/maamodheshwaritravels/maa-modheshwari-travels" target="_blank" rel="noopener">Maa Modheshwari Travels Web Platform</a>
-              </h3>
-              <p class="project-desc">
-                Production web portal and booking inquiry system built for Maa Modheshwari Travels (Surat), driving organic customer search discovery and fleet showcases.
-              </p>
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="category-pill">Commercial Web</span>
+              <span class="project-meta-label">Production Client</span>
             </div>
-            <div>
-              <div class="project-tags">
-                <span class="tag">Web Platform</span>
-                <span class="tag">Responsive UI</span>
-                <span class="tag">Local SEO</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/maamodheshwaritravels/maa-modheshwari-travels" target="_blank" rel="noopener">View Repository ↗</a>
-                <span style="color:var(--text-muted);">Surat, GJ</span>
-              </div>
+            <h3 class="project-card-title">
+              <a href="https://github.com/maamodheshwaritravels/maa-modheshwari-travels" target="_blank" rel="noopener">
+                Maa Modheshwari Travels Web Platform
+              </a>
+            </h3>
+            <p class="project-card-desc">
+              Production web portal and booking inquiry system built for Maa Modheshwari Travels in Surat, driving organic customer search discovery and fleet showcases.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Web Platform</span>
+              <span class="tag">Responsive UI</span>
+              <span class="tag">Local SEO</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/maamodheshwaritravels/maa-modheshwari-travels" target="_blank" rel="noopener" class="card-link">
+                View Repository ↗
+              </a>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- VERIFIED CERTIFICATIONS SECTION (SKILL INDIA & LEAF DRIVE) -->
-    <section class="section" id="credentials">
+    <!-- EXPERIENCE SECTION -->
+    <section class="section" id="experience">
       <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-eyebrow">National Qualifications &amp; Industry Experience</span>
-            <h2 class="section-title">Verified Certifications</h2>
-          </div>
+        <div class="section-heading">
+          <span class="section-eyebrow">Work History</span>
+          <h2 class="section-title">Experience</h2>
         </div>
 
-        <div class="primary-creds-grid">
-          <!-- Featured Skill India Card with Direct QR Link -->
-          <div class="cred-featured reveal">
-            <span class="cred-ribbon">🇮🇳 Government of India • NCVET NSQF Level 5</span>
+        <div class="resume-flow">
+          <!-- Leaf Drive IT Solution -->
+          <div class="resume-card reveal">
+            <div class="resume-header">
+              <div>
+                <h3 class="resume-role">Flutter Application Developer Intern</h3>
+                <div class="resume-company">
+                  <a href="https://www.leafdrive.co.in" target="_blank" rel="noopener">Leaf Drive IT Solution</a> • Nanpura, Surat, Gujarat
+                </div>
+              </div>
+              <div class="resume-meta">
+                <span class="date-badge">May 2024 – July 2024 (45 Days)</span>
+              </div>
+            </div>
+            <ul class="resume-bullets">
+              <li>Designed and implemented responsive cross-platform mobile UI screens using Flutter Material 3 widgets and custom component hierarchies.</li>
+              <li>Integrated Firebase Authentication and Cloud Firestore for low-latency session persistence and real-time state synchronization.</li>
+              <li>Profiled Android builds, optimized rendering performance across multiple target devices, and collaborated in daily agile sprint reviews.</li>
+            </ul>
+          </div>
+
+          <!-- Anti-Phishing AI Guard -->
+          <div class="resume-card reveal">
+            <div class="resume-header">
+              <div>
+                <h3 class="resume-role">Creator &amp; Lead Engineer — Anti-Phishing AI Guard</h3>
+                <div class="resume-company">
+                  <a href="https://chromewebstore.google.com/detail/anti-phishing-ai-guard/hacojgdkakkkjlbiakmdnigchjlaikkh" target="_blank" rel="noopener">Chrome Web Store &amp; Render Cloud</a> • Open Source
+                </div>
+              </div>
+              <div class="resume-meta">
+                <span class="date-badge">2024 – Present</span>
+              </div>
+            </div>
+            <ul class="resume-bullets">
+              <li>Architected pre-navigation browser threat blocker using Chrome Manifest V3 APIs to intercept suspicious URLs prior to network execution.</li>
+              <li>Trained and tuned an XGBoost machine learning classifier on lexical and domain entropy heuristics; served via an asynchronous FastAPI backend deployed on Render.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-eyebrow">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="resume-flow">
+          <!-- Symbiosis Institute of Technology -->
+          <div class="resume-card reveal">
+            <div class="resume-header">
+              <div>
+                <h3 class="resume-role">Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering</h3>
+                <div class="resume-company">
+                  <a href="https://www.sitpune.edu.in" target="_blank" rel="noopener">Symbiosis Institute of Technology (SIT), Pune</a> • Symbiosis International (Deemed University)
+                </div>
+              </div>
+              <div class="resume-meta">
+                <span class="date-badge">2025 – 2029 (Lateral Entry / DSY)</span>
+              </div>
+            </div>
+            <div class="resume-details-text">
+              Direct Second Year engineering admission at the flagship Lavale Campus in Pune (PRN: 26070122509).
+            </div>
+            <ul class="resume-bullets">
+              <li>Core Coursework: Data Structures &amp; Algorithms, Core Java Systems, Relational Database Management Systems (DBMS), and Operating Systems.</li>
+              <li>Undergraduate Research: Machine learning heuristics for client-side phishing mitigation and prompt defense in multimodal LLMs (<a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener">ORCID: 0009-0007-7965-0995</a>).</li>
+            </ul>
+          </div>
+
+          <!-- Tapi Diploma Engineering College -->
+          <div class="resume-card reveal">
+            <div class="resume-header">
+              <div>
+                <h3 class="resume-role">Diploma in Information Technology</h3>
+                <div class="resume-company">
+                  Tapi Diploma Engineering College (TDEC), Surat • Gujarat Technological University (GTU)
+                </div>
+              </div>
+              <div class="resume-meta">
+                <span class="date-badge">2022 – 2025</span>
+              </div>
+            </div>
+            <ul class="resume-bullets">
+              <li>Completed intensive 6-semester engineering diploma focused on Mobile Application Development (Flutter &amp; Dart), Web Architecture, and Relational Databases.</li>
+              <li>Awarded the 540-hour national NCVET / NASSCOM NSQF Level 5 qualification alongside diploma coursework.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERIFIED CERTIFICATIONS -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-eyebrow">National &amp; Industry Qualifications</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <div class="creds-grid">
+          <!-- Skill India / NCVET -->
+          <div class="cred-card reveal">
+            <div class="cred-badge-row">
+              <span class="badge-official">NCVET &amp; NASSCOM NSQF Level 5</span>
+              <span class="cred-date">Issued Jan 2025</span>
+            </div>
             <h3 class="cred-title">Application Developer – Web &amp; Mobile</h3>
-            <div class="cred-issuer">Skill India / NCVET &amp; IT-ITeS SSC NASSCOM (PMKVY Scheme)</div>
-            <p class="cred-details">
-              Completed <strong>540 Hours</strong> of national competency-based engineering training and cleared rigorous assessment carrying <strong>18 Credits at NSQF Level 5</strong> (Grade B), issued on <strong>15 January 2025</strong> via Shree Swami Atmanand Saraswati Institute of Technology (SSASIT), Surat.
+            <div class="cred-org">Skill India / IT-ITeS SSC NASSCOM • Government of India</div>
+            <p class="cred-desc">
+              Completed <strong>540 Hours</strong> of national competency-based training carrying <strong>18 Credits at NSQF Level 5</strong> (Grade B) via SSASIT Surat.
             </p>
-            <div class="cred-id">Certificate No: AEGJA0021QG-05-IT-00512-2023-V1.1-NASSCOM-006072</div>
-            <div class="cert-footer-action" style="margin-top:16px;">
+            <div class="cred-id">Certificate ID: AEGJA0021QG-05-IT-00512-2023-V1.1-NASSCOM-006072</div>
+            <div class="cred-action">
               <a href="https://admin.skillindiadigital.gov.in/documentverificationbyQR?content=P0NhbmRpZGF0ZSBOYW1lID0gUG9zdGl3YWxhIHZhdHNhbCBkaXBha2JoYWkmJkNhbmRpZGF0ZSBJRCA9IENBTl8zMDU5MDAwOSYmU2VjdG9yIE5hbWUgPSBJVC1JVGVTJiZRUCBOYW1lID0gQXBwbGljYXRpb24gRGV2ZWxvcGVyIC0gV2ViICYgTW9iaWxlJiZRUCBDb2RlID0gU1NDL1E4NDAzJiZHcmFkZSA9IEImJkNhbmRpZGF0ZS9BcHBsaWNhbnQgdHlwZSA9IENhbmRpZGF0ZSYmRG9jdW1lbnQgSUQgPSBSSFQySVZGWEtLMFhHWjJJJiZEb2N1bWVudCA9IGNlcnRpZmljYXRlJiZJc3N1YW5jZSBEYXRlID0gMTUvMDEvMjAyNQ%3D%3D" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
                 Verify on Skill India Digital ↗
               </a>
             </div>
           </div>
 
-          <!-- Leaf Drive Internship Certificate Card -->
-          <div class="cred-featured reveal">
-            <span class="cred-ribbon">💼 Verified Industry Internship • 45 Days</span>
+          <!-- Leaf Drive Internship -->
+          <div class="cred-card reveal">
+            <div class="cred-badge-row">
+              <span class="badge-official">Industry Tenure</span>
+              <span class="cred-date">Issued July 2024</span>
+            </div>
             <h3 class="cred-title">Flutter Application Developer Intern</h3>
-            <div class="cred-issuer">Leaf Drive IT Solution, Surat (www.leafdrive.co.in)</div>
-            <p class="cred-details">
-              Delivered production Flutter UI component hierarchies, real-time Firebase Authentication, Cloud Firestore database operations, and device-level Android profiling across 45 days (27 May 2024 – 08 July 2024) under CEO Mr. Mihir M. Parmar.
+            <div class="cred-org">Leaf Drive IT Solution, Surat</div>
+            <p class="cred-desc">
+              Verified 45-day industry tenure (27 May 2024 – 08 July 2024) delivering production Flutter UI screens and real-time Firebase backend integrations.
             </p>
-            <div class="cred-id">Issued: July 9, 2024 • Verified Flutter Industry Tenure</div>
-            <div class="cert-footer-action" style="margin-top:16px;">
-              <a href="https://www.leafdrive.co.in" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
-                Visit Company Website ↗
+            <div class="cred-id">Verified by CEO Mr. Mihir M. Parmar</div>
+            <div class="cred-action">
+              <a href="https://www.leafdrive.co.in" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">
+                Company Website ↗
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Secondary Credential Grid -->
-        <div class="projects-grid" style="margin-top:22px;">
-          <div class="project-card reveal">
-            <div class="project-top">
-              <span class="project-badge">Full-Stack MERN</span>
-              <span style="color:var(--text-muted); font-size:0.8rem;">October 2026</span>
-            </div>
-            <h4 class="project-title">Full Stack Web Development (MERN Stack)</h4>
-            <p class="project-desc">Great Learning Academy • MongoDB, Express.js, React.js &amp; Node.js architecture.</p>
+        <!-- Additional Credentials List -->
+        <div class="mini-creds-grid">
+          <div class="mini-cred-item reveal">
+            <div class="mini-cred-title">Full Stack Web Development (MERN Stack)</div>
+            <div class="mini-cred-meta">Great Learning Academy • MongoDB, Express.js, React.js, Node.js</div>
           </div>
-
-          <div class="project-card reveal">
-            <div class="project-top">
-              <span class="project-badge">Software Engineering</span>
-              <span style="color:var(--text-muted); font-size:0.8rem;">September 2026</span>
-            </div>
-            <h4 class="project-title">Introduction to Software Engineering</h4>
-            <p class="project-desc">Coursera • Software Development Life Cycle (SDLC), Agile Sprints, &amp; Architecture.</p>
+          <div class="mini-cred-item reveal">
+            <div class="mini-cred-title">Introduction to Software Engineering</div>
+            <div class="mini-cred-meta">Coursera • Software Development Life Cycle (SDLC) &amp; Agile Architecture</div>
           </div>
-
-          <div class="project-card reveal">
-            <div class="project-top">
-              <span class="project-badge">Student Developer</span>
-              <span style="color:var(--text-muted); font-size:0.8rem;">Global Campus</span>
-            </div>
-            <h4 class="project-title">GitHub Global Campus Student Developer</h4>
-            <p class="project-desc">GitHub Education (@vatsalpostiwala) • GitHub Copilot &amp; Cloud Developer Pack.</p>
+          <div class="mini-cred-item reveal">
+            <div class="mini-cred-title">GitHub Global Campus Student Developer</div>
+            <div class="mini-cred-meta">GitHub Education (@vatsalpostiwala) • Cloud Developer Suite</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE & EDUCATION TIMELINE -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-eyebrow">Career &amp; Academic Journey</span>
-            <h2 class="section-title">Experience &amp; Education</h2>
-          </div>
-        </div>
-
-        <div class="timeline-grid">
-          <!-- Experience Column -->
-          <div class="timeline-col reveal">
-            <h3>💼 Professional Engineering Experience</h3>
-            <div class="timeline">
-              <div class="timeline-item">
-                <span class="timeline-date">27 May 2024 – 08 July 2024 (45 Days)</span>
-                <div class="timeline-role">Intern – Flutter Developer</div>
-                <div class="timeline-org">
-                  <a href="https://www.leafdrive.co.in" target="_blank" rel="noopener">Leaf Drive IT Solution</a> • Nanpura, Surat, Gujarat
-                </div>
-                <ul class="timeline-list">
-                  <li>Designed responsive, cross-platform mobile UI screens using Flutter Material 3 widgets and custom component hierarchies.</li>
-                  <li>Integrated <strong>Firebase Authentication</strong> and <strong>Cloud Firestore</strong> for low-latency session persistence.</li>
-                  <li>Debugged, tested, and optimized mobile applications across devices while participating in sprint reviews.</li>
-                </ul>
-              </div>
-
-              <div class="timeline-item">
-                <span class="timeline-date">2024 – Present</span>
-                <div class="timeline-role">Creator &amp; Maintainer — Anti-Phishing AI Guard</div>
-                <div class="timeline-org">
-                  <a href="https://github.com/vatsalpostiwala/anti-phishing-backend" target="_blank" rel="noopener">Chrome Web Store &amp; Render Cloud</a>
-                </div>
-                <ul class="timeline-list">
-                  <li>Engineered pre-navigation browser threat blocker combining Chrome MV3 telemetry with FastAPI + XGBoost on Render.</li>
-                  <li>Collaborated across open-source and team repositories including <code>Tejas2305/NutriGuide</code> and client web deployments.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Education Column -->
-          <div class="timeline-col reveal">
-            <h3>🎓 Academic Qualifications</h3>
-            <div class="timeline">
-              <div class="timeline-item highlight-card">
-                <span class="timeline-date">2025 – 2029 (Lateral Entry / DSY)</span>
-                <div class="timeline-role">B.Tech in Computer Science &amp; Engineering</div>
-                <div class="timeline-org">
-                  <a href="https://www.sitpune.edu.in" target="_blank" rel="noopener">Symbiosis Institute of Technology (SIT), Pune</a>
-                </div>
-                <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:8px;">Symbiosis International (Deemed University) • PRN: 26070122509</p>
-                <ul class="timeline-list">
-                  <li>Direct Second Year Engineering at the flagship Lavale Campus in Pune.</li>
-                  <li>Coursework: Advanced Data Structures &amp; Algorithms, Core Java Systems, Relational DBMS, and OS Internals.</li>
-                  <li>Undergraduate Research: Pre-navigation browser heuristics and LLM prompt injection defenses (ORCID 0009-0007-7965-0995).</li>
-                </ul>
-              </div>
-
-              <div class="timeline-item">
-                <span class="timeline-date">2022 – 2025 (Completed 3-Year Diploma)</span>
-                <div class="timeline-role">Diploma in Information Technology</div>
-                <div class="timeline-org">
-                  Tapi Diploma Engineering College (TDEC), Surat • GTU
-                </div>
-                <ul class="timeline-list">
-                  <li>Completed 6-semester engineering diploma with intensive focus on Mobile Application Development (Flutter &amp; Dart).</li>
-                  <li>Awarded the 540-hour NCVET / NASSCOM NSQF Level 5 qualification alongside diploma coursework.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EVIDENCE-BACKED SKILLS SECTION -->
+    <!-- TECHNICAL SKILLS -->
     <section class="section" id="skills">
       <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-eyebrow">Verified Capabilities</span>
-            <h2 class="section-title">Technical Stack &amp; Competencies</h2>
-          </div>
+        <div class="section-heading">
+          <span class="section-eyebrow">Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
         </div>
 
-        <div class="skills-container reveal">
-          <div class="skill-group">
-            <h3>📱 Mobile &amp; Frontend Development</h3>
-            <div class="competency-list">
-              <div class="competency-item">
-                <div class="competency-head"><span>Flutter SDK &amp; Dart</span><span class="competency-tier">Production</span></div>
-                <div class="competency-proof">45-day industry internship @ Leaf Drive IT &amp; 540-hr NCVET NSQF Level 5 credential.</div>
-              </div>
-              <div class="competency-item">
-                <div class="competency-head"><span>Firebase Auth &amp; Firestore</span><span class="competency-tier">Production</span></div>
-                <div class="competency-proof">Real-time session persistence, document data models, and multi-factor authentication.</div>
-              </div>
-              <div class="competency-item">
-                <div class="competency-head"><span>State Management &amp; UI</span><span class="competency-tier">Advanced</span></div>
-                <div class="competency-proof">Reactive Material 3 widgets, responsive device layout, and multi-screen navigation flows.</div>
-              </div>
+        <div class="skills-grid reveal">
+          <div class="skill-card">
+            <h3 class="skill-card-title">Languages &amp; Core</h3>
+            <div class="skill-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Python</span>
+              <span class="tag">C / C++</span>
+              <span class="tag">SQL</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5 / CSS3</span>
             </div>
           </div>
 
-          <div class="skill-group">
-            <h3>🛡️ AI/ML, Security &amp; Cloud Backend</h3>
-            <div class="competency-list">
-              <div class="competency-item">
-                <div class="competency-head"><span>FastAPI &amp; XGBoost ML</span><span class="competency-tier">Production</span></div>
-                <div class="competency-proof">Powers live Anti-Phishing AI Guard microservice deployed on Render Cloud.</div>
-              </div>
-              <div class="competency-item">
-                <div class="competency-head"><span>Browser Extensions (MV3)</span><span class="competency-tier">Live</span></div>
-                <div class="competency-proof">Published Chrome Web Store extension intercepting pre-navigation phishing telemetry.</div>
-              </div>
-              <div class="competency-item">
-                <div class="competency-head"><span>Multi-Agent AI Systems</span><span class="competency-tier">Collaborative</span></div>
-                <div class="competency-proof">LLM worker orchestration, structured agent reasoning, prompt engineering, and deterministic routing workflows.</div>
-              </div>
+          <div class="skill-card">
+            <h3 class="skill-card-title">Frameworks &amp; Runtimes</h3>
+            <div class="skill-tags">
+              <span class="tag">Flutter SDK</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">React.js</span>
+              <span class="tag">Android Development</span>
             </div>
           </div>
 
-          <div class="skill-group">
-            <h3>⚙️ Core Computer Science &amp; Full-Stack</h3>
-            <div class="competency-list">
-              <div class="competency-item">
-                <div class="competency-head"><span>DSA (Java / C++)</span><span class="competency-tier">Core CS</span></div>
-                <div class="competency-proof">Priority Heaps, Graph algorithms, Stack expression parsing, and algorithmic problem-solving.</div>
-              </div>
-              <div class="competency-item">
-                <div class="competency-head"><span>SQL &amp; Relational DBMS</span><span class="competency-tier">Database</span></div>
-                <div class="competency-proof">Schema design, normalization (BCNF), relational algebra, and ACID transaction workflows.</div>
-              </div>
-              <div class="competency-item">
-                <div class="competency-head"><span>Git, GitHub &amp; DevOps</span><span class="competency-tier">DevOps</span></div>
-                <div class="competency-proof">GitHub Pages deployment, CI/CD action workflows, and collaborative version control.</div>
-              </div>
+          <div class="skill-card">
+            <h3 class="skill-card-title">Cloud, Data &amp; Security</h3>
+            <div class="skill-tags">
+              <span class="tag">Firebase Auth</span>
+              <span class="tag">Cloud Firestore</span>
+              <span class="tag">MongoDB Atlas</span>
+              <span class="tag">XGBoost ML</span>
+              <span class="tag">Chrome Extensions (MV3)</span>
+              <span class="tag">Render Cloud</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card-title">Engineering Fundamentals</h3>
+            <div class="skill-tags">
+              <span class="tag">Data Structures &amp; Algorithms</span>
+              <span class="tag">Object-Oriented Programming</span>
+              <span class="tag">Relational DBMS</span>
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">REST API Architecture</span>
+              <span class="tag">Linux / Unix</span>
             </div>
           </div>
         </div>
@@ -684,46 +628,30 @@
     <!-- RESEARCH & SCHOLARLY IDENTIFIERS -->
     <section class="section" id="research">
       <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-eyebrow">Academic Profile &amp; Research</span>
-            <h2 class="section-title">Scholarly Identifiers</h2>
-          </div>
+        <div class="section-heading">
+          <span class="section-eyebrow">Academic Identifiers</span>
+          <h2 class="section-title">Research &amp; Affiliation</h2>
         </div>
 
-        <div class="academic-card reveal">
-          <div class="academic-header">
-            <div>
-              <h3 class="academic-inst">Symbiosis Institute of Technology (SIT), Pune</h3>
-              <p class="academic-parent">Symbiosis International (Deemed University)</p>
-              <p class="academic-degree">Bachelor of Technology (B.Tech) — Computer Science and Engineering</p>
-            </div>
-            <div class="academic-batch">
-              <span class="badge badge-accent">Batch 2025 – 2029</span>
-            </div>
-          </div>
-          
-          <div class="academic-details">
-            <div class="academic-point">
-              <strong>Research Focus:</strong> Machine Learning heuristics for client-side phishing mitigation, pre-navigation web interception, and prompt injection defenses in multimodal Large Language Models.
-            </div>
-            <div class="academic-point">
-              <strong>Affiliated Scholar Identifiers:</strong>
-              <div class="research-id-list">
-                <a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener" class="research-id-pill">
-                  ORCID: 0009-0007-7965-0995
-                </a>
-                <span class="research-id-pill neutral-pill">
-                  PRN: 26070122509
-                </span>
-                <a href="https://www.linkedin.com/in/vatsal-postiwala" target="_blank" rel="noopener" class="research-id-pill">
-                  LinkedIn: vatsal-postiwala
-                </a>
-                <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener" class="research-id-pill">
-                  GitHub: @vatsalpostiwala
-                </a>
-              </div>
-            </div>
+        <div class="research-box reveal">
+          <div class="research-inst">Symbiosis Institute of Technology (SIT), Pune</div>
+          <div class="research-deg">Bachelor of Technology (B.Tech) — Computer Science and Engineering (Batch 2025 – 2029)</div>
+          <p class="research-desc">
+            Research focus in machine learning heuristics for client-side phishing mitigation, pre-navigation web interception, and prompt injection defenses in multimodal Large Language Models.
+          </p>
+          <div class="research-links">
+            <a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener" class="research-pill">
+              ORCID: 0009-0007-7965-0995
+            </a>
+            <span class="research-pill neutral">
+              PRN: 26070122509
+            </span>
+            <a href="https://www.linkedin.com/in/vatsal-postiwala" target="_blank" rel="noopener" class="research-pill">
+              LinkedIn
+            </a>
+            <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener" class="research-pill">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -732,30 +660,23 @@
     <!-- CONTACT SECTION -->
     <section class="section" id="contact">
       <div class="container">
-        <div class="contact-box reveal">
-          <h2 class="contact-heading">Let's Connect &amp; Collaborate</h2>
-          <p class="contact-subtext">
-            Open to engineering internships and collaborations across Computer Science, AI/ML, and Cybersecurity. Let's connect!
+        <div class="contact-card reveal">
+          <h2 class="contact-title">Let's Connect</h2>
+          <p class="contact-desc">
+            Open to engineering internships and collaborative research in Computer Science, AI/ML, and Cybersecurity. Feel free to reach out directly.
           </p>
-          
-          <div class="contact-links">
-            <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener" class="btn btn-outline">
-              GitHub Profile
-            </a>
-            <a href="https://www.linkedin.com/in/vatsal-postiwala" target="_blank" rel="noopener" class="btn btn-primary">
-              Connect on LinkedIn
-            </a>
-            <a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener" class="btn btn-secondary">
-              ORCID Record
-            </a>
-          </div>
 
-          <div class="contact-direct">
-            <span class="contact-label">Direct Email:</span>
+          <div class="email-action-row">
             <button class="copy-email-btn" id="copyEmailBtn" data-email="vatsalposty01@gmail.com" title="Click to copy email">
               <span id="emailText">vatsalposty01@gmail.com</span>
-              <span class="copy-hint" id="copyHint">Copy</span>
+              <span class="copy-hint" id="copyHint">Copy Email</span>
             </button>
+          </div>
+
+          <div class="contact-links-row">
+            <a href="https://www.linkedin.com/in/vatsal-postiwala" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn ↗</a>
+            <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener" class="btn btn-secondary">GitHub ↗</a>
+            <a href="https://orcid.org/0009-0007-7965-0995" target="_blank" rel="noopener" class="btn btn-secondary">ORCID ↗</a>
           </div>
         </div>
       </div>
@@ -765,7 +686,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>© 2026 <strong>Vatsal Dipakbhai Postiwala</strong> • B.Tech CSE @ SIT Pune • NCVET NSQF Level 5 Certified</p>
+      <p>© 2026 <strong>Vatsal Dipakbhai Postiwala</strong> • B.Tech CSE @ SIT Pune • NCVET NSQF Level 5</p>
       <div class="footer-links">
         <a href="https://github.com/vatsalpostiwala" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/vatsal-postiwala" target="_blank" rel="noopener">LinkedIn</a>
@@ -775,6 +696,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=4.0"></script>
+  <script src="script.js?v=5.0"></script>
 </body>
 </html>
